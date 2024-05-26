@@ -1,23 +1,38 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import NavBar from './components/NavBar';
+import Header from './components/Header';
+import BookingForm from './components/BookingForm';
+import Footer from './components/Footer';
 
 function App() {
+  const [bookingInfo, setBookingInfo] = useState({
+    name: '',
+    email: '',
+    date: '',
+    time: '',
+    numberOfPeople: 1
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setBookingInfo({
+      ...bookingInfo,
+      [name]: value
+    });
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <Header />
+      <div className="content">
+        <BookingForm 
+          bookingInfo={bookingInfo}
+          handleChange={handleChange}
+        />
+      </div>
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Coursera-react-simple-booking-app/static/css/main.3c5c6298.css",
+    "main.js": "/Coursera-react-simple-booking-app/static/js/main.8290394a.js",
+    "static/js/453.50483f47.chunk.js": "/Coursera-react-simple-booking-app/static/js/453.50483f47.chunk.js",
+    "static/media/hotel.jpg": "/Coursera-react-simple-booking-app/static/media/hotel.b8b5bc71712132513e1d.jpg",
+    "index.html": "/Coursera-react-simple-booking-app/index.html",
+    "main.3c5c6298.css.map": "/Coursera-react-simple-booking-app/static/css/main.3c5c6298.css.map",
+    "main.8290394a.js.map": "/Coursera-react-simple-booking-app/static/js/main.8290394a.js.map",
+    "453.50483f47.chunk.js.map": "/Coursera-react-simple-booking-app/static/js/453.50483f47.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c5c6298.css",
+    "static/js/main.8290394a.js"
+  ]
+}
